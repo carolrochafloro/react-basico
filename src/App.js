@@ -16,6 +16,23 @@ class App extends Component {
     ],
   };
 
+  addComment = () => {
+    const newComment = {
+      name: 'Pedro',
+      message: 'Adding a comment',
+    };
+
+    // without spread operator
+    // let list = this.state.comments;
+    // list.push(newComment);
+    // this.setState({ comments: list });
+
+    // using spread operator
+    this.setState({
+      comments: [...this.state.comments, newComment],
+    });
+  };
+
   render() {
     return (
       <div className="App">
@@ -26,6 +43,7 @@ class App extends Component {
             {comment.message}
           </Comment>
         ))}
+        <button onClick={this.addComment}>Comment</button>
       </div>
     );
   }
