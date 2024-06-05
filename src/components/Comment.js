@@ -1,11 +1,15 @@
 import React from 'react';
 import './Comment.css';
 
-const Comment = () => (
-  <div className="Comment">
-    <div>Carol:</div>
-    <div>Um comentário</div>
-  </div>
-);
+const Comment = (props) => {
+  const date = new Date();
+  return (
+    <div className="Comment">
+      <h2>{props.name}</h2>
+      <p>{props.children}</p>
+      <div>{date.toLocaleString()}</div>
+    </div>
+  );
+};
 
 export default Comment;

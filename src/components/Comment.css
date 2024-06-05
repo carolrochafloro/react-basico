@@ -2,4 +2,10 @@
   background-color: #eee;
   margin-bottom: 2rem;
   border: 1px solid gray;
+  text-align: left;
+  padding: 1rem;
+}
+
+h2 {
+  margin: 0;
 }
