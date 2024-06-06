@@ -1,4 +1,48 @@
+body {
+  background-color: aliceblue;
+  /* justify-items: center; */
+}
+::placeholder {
+  color: rgb(214, 221, 227);
+}
 .App {
   text-align: center;
   padding: 0 30px;
+  margin-right: 2rem;
+}
+
+.App .form-title {
+  font-weight: bold;
+  color: rgb(3, 62, 113);
+}
+
+.App input {
+  border: none;
+  border-radius: 0.25rem;
+  color: rgb(3, 62, 113);
+}
+
+.App .name-field {
+  margin-bottom: 1rem;
+}
+
+.App textarea {
+  border-radius: 0.25rem;
+  color: rgb(3, 62, 113);
+}
+
+.App .text-field {
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.App button {
+  margin: 0;
+  background-color: rgb(150, 175, 196);
+  border: none;
+  color: rgb(3, 62, 113);
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 0.25rem;
 }

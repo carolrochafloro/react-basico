@@ -54,9 +54,10 @@ class App extends Component {
           </Comment>
         ))}
 
-        <form method="post" onSubmit={this.addComment}>
-          <p>Comment</p>
-          <div>
+        <form method="post" onSubmit={this.addComment} className="form">
+          <p className="form-title">Comment</p>
+
+          <div className="name-field">
             <input
               type="text"
               name="name"
@@ -75,9 +76,13 @@ class App extends Component {
               required
               rows="4"
               placeholder="Your comment"
+              className="text-field"
             />
           </div>
-          <button type="submit">Send</button>
+
+          <button type="submit" className="send-button">
+            Send
+          </button>
         </form>
       </div>
     );
